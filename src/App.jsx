@@ -1,6 +1,5 @@
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router'
 import './App.css'
-import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import RootLayout from './layouts/RootLayout'
