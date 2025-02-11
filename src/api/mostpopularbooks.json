@@ -1,0 +1,122 @@
+[
+  {
+    "book_id": "217536270",
+    "position": "1",
+    "name": "Quicksilver (Fae & Alchemy, #1)",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1725958672i/217536270.jpg",
+    "rating": 4.43,
+    "url": "https://www.goodreads.com/book/show/217536270-quicksilver"
+  },
+  {
+    "book_id": "216351768",
+    "position": "2",
+    "name": "The Let Them Theory",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1735589383i/216351768.jpg",
+    "rating": 4.31,
+    "url": "https://www.goodreads.com/book/show/216351768-the-let-them-theory"
+  },
+  {
+    "book_id": "203578847",
+    "position": "3",
+    "name": "Wind and Truth (The Stormlight Archive, #5)",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1724944713i/203578847.jpg",
+    "rating": 4.48,
+    "url": "https://www.goodreads.com/book/show/203578847-wind-and-truth"
+  },
+  {
+    "book_id": "219876684",
+    "position": "4",
+    "name": "The Answer Is No",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1727897163i/219876684.jpg",
+    "rating": 3.95,
+    "url": "https://www.goodreads.com/book/show/219876684-the-answer-is-no"
+  },
+  {
+    "book_id": "209455843",
+    "position": "5",
+    "name": "PS: I Hate You",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1710170075i/209455843.jpg",
+    "rating": 4.13,
+    "url": "https://www.goodreads.com/book/show/209455843-ps"
+  },
+  {
+    "book_id": "203194039",
+    "position": "6",
+    "name": "Not in My Book",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1716987845i/203194039.jpg",
+    "rating": 3.85,
+    "url": "https://www.goodreads.com/book/show/203194039-not-in-my-book"
+  },
+  {
+    "book_id": "210690230",
+    "position": "7",
+    "name": "What the Wife Knew",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1712109991i/210690230.jpg",
+    "rating": 3.59,
+    "url": "https://www.goodreads.com/book/show/210690230-what-the-wife-knew"
+  },
+  {
+    "book_id": "52934483",
+    "position": "8",
+    "name": "Heavenly Tyrant (Iron Widow, #2)",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1666660910i/52934483.jpg",
+    "rating": 3.98,
+    "url": "https://www.goodreads.com/book/show/52934483-heavenly-tyrant"
+  },
+  {
+    "book_id": "209455835",
+    "position": "9",
+    "name": "Under Loch and Key",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1709752457i/209455835.jpg",
+    "rating": 3.67,
+    "url": "https://www.goodreads.com/book/show/209455835-under-loch-and-key"
+  },
+  {
+    "book_id": "210366739",
+    "position": "10",
+    "name": "North Is the Night (Tuonela Duet, #1)",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1711423337i/210366739.jpg",
+    "rating": 3.86,
+    "url": "https://www.goodreads.com/book/show/210366739-north-is-the-night"
+  },
+  {
+    "book_id": "199793372",
+    "position": "11",
+    "name": "A Monsoon Rising (The Hurricane Wars, #2)",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1716323094i/199793372.jpg",
+    "rating": 4.21,
+    "url": "https://www.goodreads.com/book/show/199793372-a-monsoon-rising"
+  },
+  {
+    "book_id": "210365385",
+    "position": "12",
+    "name": "The Resurrectionist",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1711421228i/210365385.jpg",
+    "rating": 3.92,
+    "url": "https://www.goodreads.com/book/show/210365385-the-resurrectionist"
+  },
+  {
+    "book_id": "208584952",
+    "position": "13",
+    "name": "Rental House",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1708055761i/208584952.jpg",
+    "rating": 3.38,
+    "url": "https://www.goodreads.com/book/show/208584952-rental-house"
+  },
+  {
+    "book_id": "220506847",
+    "position": "14",
+    "name": "The Christmas Book Hunt",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1729175304i/220506847.jpg",
+    "rating": 3.72,
+    "url": "https://www.goodreads.com/book/show/220506847-the-christmas-book-hunt"
+  },
+  {
+    "book_id": "206294753",
+    "position": "15",
+    "name": "The Silent Watcher (Vegas Shadows, #1)",
+    "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1717351630i/206294753.jpg",
+    "rating": 4.14,
+    "url": "https://www.goodreads.com/book/show/206294753-the-silent-watcher"
+  }
+]

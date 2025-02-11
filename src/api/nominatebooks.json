@@ -1,0 +1,26 @@
+[
+  {
+    "book_id": 52861201,
+    "name": "From Blood and Ash",
+    "author": "Jennifer L. Armentrou",
+    "votes": 70896,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1588843906l/52861201._SY475_.jpg",
+    "url": "https://www.goodreads.com/book/show/52861201-from-blood-and-ash?from_choice=true"
+  },
+  {
+    "book_id": 52867387,
+    "name": "Beach Read",
+    "author": "Emily Henr",
+    "votes": 60124,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589881197l/52867387._SY475_.jpg",
+    "url": "https://www.goodreads.com/book/show/52867387-beach-read?from_choice=true"
+  },
+  {
+    "book_id": 50093704,
+    "name": "In Five Years",
+    "author": "Rebecca Serl",
+    "votes": 37342,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586399012l/50093704._SY475_.jpg",
+    "url": "https://www.goodreads.com/book/show/50093704-in-five-years?from_choice=true"
+  }
+]
