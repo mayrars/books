@@ -6,7 +6,7 @@ const RootLayout = () => {
   return (
     <div>
         <Header />
-        <main style={{ height: 'calc(100vh - 327px)'}}>
+        <main>
             <Outlet />
         </main>
         <Footer />
