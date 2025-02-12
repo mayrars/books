@@ -1,29 +1,14 @@
-import { useEffect, useState } from "react"
-import { getMostPopularBooks } from "../api"
+import { useEffect, useState, useCallback } from "react"
+import { popularBooks, mostPopularBooks, nominateBooks } from "../api"
+import PopularBooks from "../components/PopularBooks"
+import NominatedBooks from "../components/NominatedBooks"
 const Home = () => {
-  const [popularBooks, setPopularBooks] = useState([])
-  useEffect(() => {
-    async function __getMostPopularBooks() {
-      const books = await getMostPopularBooks()
-      setPopularBooks(books)
-    }
-    __getMostPopularBooks()
-  },[])
-  console.log(popularBooks)
   return (
     <div className="text-black">
-        <h1>Popular books</h1>
-        {
-            popularBooks.map((book) => {
-                return (
-                    <div key={book.id}>
-                        <h2>{book.title}</h2>
-                        <p>{book.author}</p>
-                        <img src={book.image} alt={book.title} />
-                    </div>
-                )
-            })
-        }
+      <div className="container mx-auto py-8 ">
+        <PopularBooks className="mb-10" data={popularBooks()} />
+        <NominatedBooks className="mt-10" data={nominateBooks()} />
+      </div>
     </div>
   )
 }
