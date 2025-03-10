@@ -1,11 +1,12 @@
 
 import { useState } from 'react';
 import { searchByName } from "../api"
+import { Link } from 'react-router';
 
 const Search = () => {
     const [text, setText] = useState('')
     const [searchResults, setSearchResults] = useState([])
-    const [openSearchResults, setOpenSearchResults] = useState(true)
+    const [openSearchResults, setOpenSearchResults] = useState(false)
     async function onSearch(e) {
         setText(e.target.value)
         const data = await searchByName(e.target.value)
@@ -29,9 +30,23 @@ const Search = () => {
                 </div>
                 <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-rose-200 focus:ring-blue-500 focus:border-blue-500" placeholder="Search..." value={text} onChange={onSearch}/>
                 <div className={`${openSearchResults ? 'block' : 'hidden'} absolute top-14 right-0 w-full md:w-96 bg-white rounded-lg shadow-lg border border-gray-200 w-full h-80 z-10 overflow-y-scroll`}>
+                    <ul role="list">
                         {searchResults.map((result) =>(
-                            <div className="grid grid-cols-2 gap-4" key={result.book_id}></div>
+                            <li className="group/item " key={result.book_id}>
+                                <Link to={`/book/${result.book_id}`} className="grid grid-cols-5 gap-4">
+                                    <div className='col-start-1 col-end-3 flex justify-items-center align-middle'><img src={result.cover} className='h-40 w-auto' alt="" width="100%" height="100%" /></div>
+                                    <div className='text-black col-start-3 col-end-6 p-2'>
+                                        <h3>{result.name}</h3>
+                                        <p><strong>Rating:</strong> {result.rating}</p>
+                                        <p><strong>Authors:</strong>
+                                            {result.authors.map((author,i)=>(i<2 ? <span key={`${result.book_id}-${author}`}>{author}, </span> : ''))}
+                                        </p>
+                                        <p><strong>Year:</strong>{result.year} </p>
+                                    </div>
+                                </Link>
+                            </li>
                         ))}
+                    </ul>
                 </div>
             </div>
             <button data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
