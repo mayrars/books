@@ -5,6 +5,7 @@ import nominatebooks from './nominatebooks.json'
 import singlebook from './singlebook.json'
 import mostPopularauthors from './mostpopularauthors.json'
 import authordata from './author.json'
+import searchdata from './searchData.json'
 
 function mostPopularBooks() {
     return mostPopularbooks;
@@ -29,8 +30,10 @@ function mostPopularAuthors() {
 function authorData() {
     return authordata
 }
-
 async function searchByName(text) {
+    return searchdata
+}
+/*async function searchByName(text) {
     const options = {
     method: 'GET',
     url: `https://hapi-books.p.rapidapi.com/search/${text}`,
@@ -46,6 +49,6 @@ async function searchByName(text) {
     } catch (error) {
         console.error(error);
     }
-}
+}*/
 
 export { mostPopularBooks, popularBooks, nominateBooks, singleBook, mostPopularAuthors, authorData, searchByName };
