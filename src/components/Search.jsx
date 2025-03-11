@@ -30,7 +30,14 @@ const Search = () => {
                 </div>
                 <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-rose-200 focus:ring-blue-500 focus:border-blue-500" placeholder="Search..." value={text} onChange={onSearch}/>
                 <div className={`${openSearchResults ? 'block' : 'hidden'} absolute top-14 right-0 w-full md:w-96 bg-white rounded-lg shadow-lg border border-gray-200 w-full h-80 z-10 overflow-y-scroll`}>
-                    <ul role="list">
+                    <div className='flex justify-items-end w-full justify-end'>
+                        <button onClick={()=>setOpenSearchResults(false)} className="text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg text-sm p-1 mb-2 bg-blue-500 cursor-pointer">
+                            <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 6L14 14M14 6L6 14"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul role="list mt-10">
                         {searchResults.map((result) =>(
                             <li className="group/item " key={result.book_id}>
                                 <Link to={`/book/${result.book_id}`} className="grid grid-cols-5 gap-4">
