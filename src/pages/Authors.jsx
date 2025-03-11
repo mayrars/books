@@ -7,15 +7,18 @@ const Authors = () => {
       <h1 className="text-4xl font-bold mb-10 text-center mt-10">Authors</h1>
       <div className="grid grid-cols-5 gap-8">
         {
-          data.map((author) => (
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm" key={author.author_id}>
+          data.map((author) => {
+            //Check if image exists 
+            let image
+            try {
+              image = author.image ? author.image : "/src/assets/image-coming-soon.jpg"
+            } catch (error) {
+              console.log('here')
+              image = "/src/assets/image-coming-soon.jpg"
+            }
+            return <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm" key={author.author_id}>
                 <Link to={`/author/${author.author_id}`}>
-                  {
-                    author.image ? (
-                      <img src={author.image} alt={author.name} className="rounded-t-lg w-full" />) : (
-                      <img src="/src/assets/image-coming-soon.jpg" alt={author.name} className="rounded-t-lg w-full" />
-                    )
-                  }
+                  <img className="rounded-t-lg w-full" src={image} alt={author.name} /> 
                 </Link>
                 <div className="p-5">
                   <Link to={`/author/${author.author_id}`}>
@@ -24,7 +27,7 @@ const Authors = () => {
                 </div>
             </div>
 
-          ))
+          })
         }
       </div>
     </div>
