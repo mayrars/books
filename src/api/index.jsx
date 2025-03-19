@@ -31,6 +31,7 @@ function authorData() {
     return authordata
 }
 async function searchByName(text) {
+    console.log(text)
     return searchdata
 }
 /*async function searchByName(text) {
@@ -49,6 +50,6 @@ async function searchByName(text) {
     } catch (error) {
         console.error(error);
     }
-}*/
-
+}
+*/
 export { mostPopularBooks, popularBooks, nominateBooks, singleBook, mostPopularAuthors, authorData, searchByName };
