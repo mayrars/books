@@ -1,45 +1,124 @@
 import axios from 'axios'
-import mostPopularbooks from './mostpopularbooks.json'
-import popularbooks from './popularbooks.json'
-import nominatebooks from './nominatebooks.json'
-import singlebook from './singlebook.json'
-import mostPopularauthors from './mostpopularauthors.json'
-import authordata from './author.json'
-import searchdata from './searchData.json'
 
-function mostPopularBooks() {
-    return mostPopularbooks;
+async function mostPopularBooks() {
+
+    const options = {
+      method: 'GET',
+      url: 'https://hapi-books.p.rapidapi.com/month/2022/3',
+      headers: {
+        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+        'x-rapidapi-host': 'hapi-books.p.rapidapi.com'
+      }
+    };
+    
+    try {
+        const response = await axios.request(options);
+        return response.data;
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-function popularBooks() {
-    return popularbooks;
+async function popularBooks() {
+
+    const options = {
+      method: 'GET',
+      url: 'https://hapi-books.p.rapidapi.com/week/horror/10',
+      headers: {
+        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+        'x-rapidapi-host': 'hapi-books.p.rapidapi.com'
+      }
+    };
+    
+    try {
+        const response = await axios.request(options);
+        return response.data;
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-function nominateBooks() {
-    return nominatebooks;
+async function nominateBooks() {
+
+    const options = {
+      method: 'GET',
+      url: 'https://hapi-books.p.rapidapi.com/nominees/romance/2020',
+      headers: {
+        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+        'x-rapidapi-host': 'hapi-books.p.rapidapi.com'
+      }
+    };
+    
+    try {
+        const response = await axios.request(options);
+        return response.data;
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-function singleBook() {
-    return singlebook;
+async function singleBook(book_id) {
+    const options = {
+    method: 'GET',
+    url: `https://hapi-books.p.rapidapi.com/book/${book_id}`,
+    headers: {
+        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+        'x-rapidapi-host': 'hapi-books.p.rapidapi.com'
+    }
+    };
+
+    try {
+        const response = await axios.request(options);
+        return response.data;
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-function mostPopularAuthors() {
+async function mostPopularAuthors() {
+
+    const options = {
+    method: 'GET',
+    url: 'https://hapi-books.p.rapidapi.com/top_authors',
+    headers: {
+        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+        'x-rapidapi-host': 'hapi-books.p.rapidapi.com'
+    }
+    };
+
+    try {
+        const response = await axios.request(options);
+        return response.data;
+    } catch (error) {
+        console.error(error);
+    }
     return mostPopularauthors;
 }
 
-function authorData() {
-    return authordata
+async function authorData(author_id) {
+
+    const options = {
+      method: 'GET',
+      url: `https://hapi-books.p.rapidapi.com/author/${author_id}`,
+      headers: {
+        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+        'x-rapidapi-host': 'hapi-books.p.rapidapi.com'
+      }
+    };
+    
+    try {
+        const response = await axios.request(options);
+        return response.data;
+    } catch (error) {
+        console.error(error);
+    }
 }
 async function searchByName(text) {
-    console.log(text)
-    return searchdata
-}
-/*async function searchByName(text) {
     const options = {
     method: 'GET',
     url: `https://hapi-books.p.rapidapi.com/search/${text}`,
     headers: {
-        'x-rapidapi-key': '5429963261msh2a15d87840d5f5bp1468d2jsn265821d0744d',
+        'x-rapidapi-key': import.meta.env.VITE_API_KEY,
         'x-rapidapi-host': 'hapi-books.p.rapidapi.com'
     }
     };
@@ -51,5 +130,4 @@ async function searchByName(text) {
         console.error(error);
     }
 }
-*/
 export { mostPopularBooks, popularBooks, nominateBooks, singleBook, mostPopularAuthors, authorData, searchByName };
